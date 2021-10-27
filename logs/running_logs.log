@@ -305,3 +305,283 @@ Instructions for updating:
 Use tf.where in 2.0, which has the same broadcast rule as np.where
 [2021-10-27 18:52:37,794: INFO: train]: Training is finished
 [2021-10-27 18:52:37,794: INFO: train]: training is complete
+[2021-10-27 19:31:37,129: INFO: callbacks_stage]: >>>>> stage three started
+[2021-10-27 19:31:37,129: ERROR: callbacks_stage]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "src/callbacks_stage.py", line 48, in <module>
+    prepare_callbacks(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/callbacks_stage.py", line 17, in prepare_callbacks
+    config = read_yaml(config_path)
+NameError: name 'read_yaml' is not defined
+[2021-10-27 19:32:00,956: INFO: callbacks_stage]: >>>>> stage three started
+[2021-10-27 19:32:00,956: ERROR: callbacks_stage]: name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "src/callbacks_stage.py", line 48, in <module>
+    prepare_callbacks(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/callbacks_stage.py", line 17, in prepare_callbacks
+    config = read_yaml(config_path)
+NameError: name 'read_yaml' is not defined
+[2021-10-27 19:32:44,129: INFO: callbacks_stage]: >>>>> stage three started
+[2021-10-27 19:32:44,153: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 19:32:44,153: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 19:32:44,153: ERROR: callbacks_stage]: name 'create_directory' is not defined
+Traceback (most recent call last):
+  File "src/callbacks_stage.py", line 49, in <module>
+    prepare_callbacks(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/callbacks_stage.py", line 31, in prepare_callbacks
+    create_directory([
+NameError: name 'create_directory' is not defined
+[2021-10-27 19:32:58,906: INFO: callbacks_stage]: >>>>> stage three started
+[2021-10-27 19:32:58,906: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 19:32:58,906: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 19:32:58,906: INFO: all_utils]: directory is created at artifacts\Tensorboard
+[2021-10-27 19:32:58,906: INFO: all_utils]: directory is created at artifacts\Checkpoint
+[2021-10-27 19:32:58,912: INFO: all_utils]: directory is created at artifacts\callbacks
+[2021-10-27 19:32:58,912: INFO: callbacks]: Tensor board logs are saved at artifacts\callbacks\tensorboard_cb.cb
+[2021-10-27 19:32:58,914: INFO: callbacks]: Check point call backs are saved at artifacts\callbacks\checkpoint_cb.cb
+[2021-10-27 19:32:58,914: INFO: callbacks_stage]: stage three completed! callbacks are prepared and saved as binary>>>>>
+[2021-10-27 21:14:45,026: INFO: train]: getting data for train
+[2021-10-27 21:14:45,034: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 21:14:45,034: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 21:14:45,034: INFO: train]: Creating directory
+[2021-10-27 21:14:45,034: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 21:14:45,077: INFO: train]: (2666, 15)
+[2021-10-27 21:14:45,077: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 21:14:45,077: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 21:14:45,077: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 21:14:45,077: INFO: train]: training started
+[2021-10-27 21:14:45,094: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-10-27 21:14:45,094: ERROR: train]: model() takes 3 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "src/train.py", line 60, in <module>
+    train("config/config.yaml","params.yaml")
+  File "src/train.py", line 41, in train
+    model(X_train,Y_train,model_save_path,callbacks)
+TypeError: model() takes 3 positional arguments but 4 were given
+[2021-10-27 21:15:12,217: INFO: train]: getting data for train
+[2021-10-27 21:15:12,217: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 21:15:12,217: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 21:15:12,217: INFO: train]: Creating directory
+[2021-10-27 21:15:12,217: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 21:15:12,225: INFO: train]: (2666, 15)
+[2021-10-27 21:15:12,225: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 21:15:12,225: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 21:15:12,225: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 21:15:12,225: INFO: train]: training started
+[2021-10-27 21:15:12,225: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-10-27 21:15:12,258: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 21:15:12,367: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 21:15:12,566: ERROR: train]: Invalid argument "callbacks" passed to K.function with TensorFlow backend
+Traceback (most recent call last):
+  File "src/train.py", line 60, in <module>
+    train("config/config.yaml","params.yaml")
+  File "src/train.py", line 41, in train
+    model(X_train,Y_train,model_save_path,callbacks)
+  File "d:\datascience\deep learning\assignments\mnist_ann\src\model.py", line 14, in model
+    model.fit(X_train,Y_train,epochs=170,batch_size=32)
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\engine\training.py", line 780, in fit
+    steps_name='steps_per_epoch')
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\engine\training_arrays.py", line 157, in model_iteration
+    f = _make_execution_function(model, mode)
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\engine\training_arrays.py", line 532, in _make_execution_function
+    return model._make_execution_function(mode)
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2276, in _make_execution_function
+    self._make_train_function()
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\engine\training.py", line 2231, in _make_train_function
+    **self._function_kwargs)
+  File "C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\keras\backend.py", line 3478, in function
+    raise ValueError(msg)
+ValueError: Invalid argument "callbacks" passed to K.function with TensorFlow backend
+[2021-10-27 21:16:35,192: INFO: train]: getting data for train
+[2021-10-27 21:16:35,192: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 21:16:35,192: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 21:16:35,192: INFO: train]: Creating directory
+[2021-10-27 21:16:35,192: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 21:16:35,206: INFO: train]: (2666, 15)
+[2021-10-27 21:16:35,206: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 21:16:35,206: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 21:16:35,206: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 21:16:35,206: INFO: train]: training started
+[2021-10-27 21:16:35,206: INFO: callbacks]: saved callbacks are loaded from artifacts\callbacks
+[2021-10-27 21:16:35,222: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 21:16:35,300: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 21:16:36,184: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:36,358: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:36,531: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:36,698: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:36,862: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,041: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,208: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,363: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,524: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,691: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:37,861: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,050: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,211: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,366: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,564: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,748: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:38,897: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,071: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,224: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,391: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,576: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,739: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:39,900: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:40,373: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:40,551: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:40,749: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:40,941: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:41,106: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:41,290: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:41,487: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:41,712: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:41,861: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,028: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,213: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,402: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,599: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,765: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:42,907: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:43,160: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:43,325: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:43,530: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:43,737: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:43,959: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:44,159: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:44,451: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:44,775: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:45,147: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:45,783: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:45,984: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:46,322: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:46,667: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:46,968: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:47,191: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:47,460: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:47,696: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:47,951: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:48,278: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:48,615: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:48,987: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:49,327: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:49,667: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:49,976: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:50,319: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:50,681: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:51,038: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:51,390: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:51,669: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:51,979: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:52,305: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:52,648: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:52,950: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:53,229: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:53,539: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:53,707: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:53,899: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:54,202: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:54,525: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:54,852: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:55,139: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:55,459: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:55,766: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:56,049: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:56,393: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:56,708: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:57,019: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:57,348: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:57,666: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:58,009: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:58,264: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:58,461: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:58,679: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:58,839: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:59,091: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:59,307: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:59,589: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:16:59,840: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:00,137: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:00,470: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:00,739: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:00,975: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:01,321: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:01,643: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:01,907: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:02,225: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:02,536: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:02,885: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:03,254: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:03,574: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:03,789: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:04,131: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:04,443: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:04,783: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:05,113: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:05,462: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:05,791: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:06,162: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:06,459: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:06,743: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:07,088: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:07,438: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:07,740: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:08,082: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:08,365: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:08,717: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:09,046: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:09,230: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:09,533: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:09,774: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:10,074: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:10,375: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:10,704: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:10,995: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:11,263: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:11,615: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:11,864: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,039: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,205: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,367: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,558: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,808: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:12,967: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:13,146: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:13,337: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:13,597: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:13,829: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:13,977: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:14,133: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:14,372: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:14,626: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:14,964: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:15,305: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:15,632: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:15,968: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:16,285: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:16,619: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:16,839: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:17,158: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:17,458: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:17,797: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:18,061: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:18,398: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:18,704: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:18,991: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:19,223: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:19,540: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:19,859: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:20,186: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:20,473: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:20,778: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:21,112: WARNING: callbacks]: Can save best model only with val_loss available, skipping.
+[2021-10-27 21:17:21,347: INFO: train]: Training is finished
+[2021-10-27 21:17:21,347: INFO: train]: training is complete

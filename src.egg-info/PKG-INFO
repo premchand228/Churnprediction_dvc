@@ -8,7 +8,7 @@ Author-email: pream.chand228@gmail.com
 License: UNKNOWN
 Description: # DVC - DL - TF - AIOPS demo
         
-        download data --> [source](https://drive.google.com/drive/u/5/folders/1tz4IOoJKdi999IRdqJY04VOifyllRzj1
+        download data --> [source](Churn Data freely avilable
         )
         
         ## commands - 
@@ -39,6 +39,13 @@ Description: # DVC - DL - TF - AIOPS demo
         ```bash
         pip install -e .
         ```
+        ### create config.yaml
+        ''' you shall put all configurations and metadata info here and read during execution
+        
+        ### create params.yaml
+        ''' yiu shall put all params chganges here
+        # create dvc.yaml 
+        ``` This file will create pipe lines based on stages created.
 Platform: UNKNOWN
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown

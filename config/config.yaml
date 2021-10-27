@@ -12,3 +12,7 @@ artifacts:
   MODEL_FILE_NAME: churn_ann.h5
   REPORTS_DIR: Reports
   REPORT_FILE_NAME: classificationreport.txt
+  CALL_BACK_DIR: callbacks
+  TENSORBOARD_DIR: Tensorboard
+  CHECKPOINT_DIR: Checkpoint
+  

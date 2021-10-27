@@ -1,5 +1,8 @@
 import logging
+
+from tensorflow.python.keras.api._v1.keras import callbacks
 from src.all_utils import read_yaml,create_directory
+from src.utils.callbacks import get_callbacks
 from src.model import model
 import argparse
 import pandas as pd
@@ -33,7 +36,9 @@ def train(config_path,params_path):
     logging.info(f" shape of X_train is {X_train.shape}")
     logging.info(f" shape of Y_train is {Y_train.shape}")
     logging.info(f"training started")
-    model(X_train,Y_train,model_save_path)
+    callbacks_path=os.path.join(artifacts_dir,artifacts["CALL_BACK_DIR"])
+    callbacks=get_callbacks(callbacks_path)
+    model(X_train,Y_train,model_save_path,callbacks)
     logging.info(f"Training is finished")
 
 
