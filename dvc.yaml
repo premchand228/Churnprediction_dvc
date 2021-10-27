@@ -18,6 +18,7 @@ stages:
      - artifacts\Train\Train.csv
      - artifacts\Test\Test.csv
      - src\train.py
+     - src\model.py
     outs:
      - artifacts\Model\churn_ann.h5
   evaluate:
@@ -27,6 +28,8 @@ stages:
      - params.yaml
      - artifacts\Test\Test.csv
      - src\Evaluate.py
+     - src\model.py
+     - src\train.py
      - artifacts\Model\churn_ann.h5
     outs:
      - artifacts\Reports\classificationreport.txt 

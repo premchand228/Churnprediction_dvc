@@ -8,5 +8,5 @@ def model(X_train,Y_train,model_file_path):
     model.add(tf.keras.layers.Dense(units=150,activation="relu"))
     model.add(tf.keras.layers.Dense(units=1,activation="sigmoid"))
     model.compile("Adam",loss=tf.keras.losses.binary_crossentropy,metrics=["accuracy"])
-    model.fit(X_train,Y_train,epochs=3,batch_size=32)
+    model.fit(X_train,Y_train,epochs=200,batch_size=32)
     model.save(model_file_path)
