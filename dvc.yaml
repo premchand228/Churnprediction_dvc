@@ -10,3 +10,25 @@ stages:
     outs:
       - artifacts\Train\Train.csv
       - artifacts\Test\Test.csv
+  train_data:
+    cmd: python src\train.py
+    deps: 
+     - config\config.yaml
+     - params.yaml
+     - artifacts\Train\Train.csv
+     - artifacts\Test\Test.csv
+     - src\train.py
+    outs:
+     - artifacts\Model\churn_ann.h5
+  evaluate:
+    cmd: python src\Evaluate.py
+    deps: 
+     - config\config.yaml
+     - params.yaml
+     - artifacts\Test\Test.csv
+     - src\Evaluate.py
+     - artifacts\Model\churn_ann.h5
+    outs:
+     - artifacts\Reports\classificationreport.txt 
+
+   
