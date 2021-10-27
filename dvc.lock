@@ -21,3 +21,28 @@ stages:
     - path: artifacts\Train\Train.csv
       md5: 2804d656f811d80fc8a3014bab0e6b4a
       size: 662615
+  train_data:
+    cmd: python src\train.py
+    deps:
+    - path: artifacts\Test\Test.csv
+      md5: e7c57c860c333c0807ce75911e6ce490
+      size: 156445
+    - path: artifacts\Train\Train.csv
+      md5: 2804d656f811d80fc8a3014bab0e6b4a
+      size: 662615
+    - path: config\config.yaml
+      md5: d855331ff3f713c8efa82dc85d872042
+      size: 354
+    - path: params.yaml
+      md5: d41d8cd98f00b204e9800998ecf8427e
+      size: 0
+    - path: src\model.py
+      md5: fab82cd56147e99e3e0ee3abefcfec6e
+      size: 656
+    - path: src\train.py
+      md5: dc844fa18483d5b6c3b2f1053207c5a2
+      size: 2087
+    outs:
+    - path: artifacts\Model\churn_ann.h5
+      md5: b77667e9c4caea72740bfbff72e2347d
+      size: 638728
