@@ -251,3 +251,57 @@ Instructions for updating:
 Use tf.where in 2.0, which has the same broadcast rule as np.where
 [2021-10-27 18:37:05,349: INFO: train]: Training is finished
 [2021-10-27 18:37:05,349: INFO: train]: training is complete
+[2021-10-27 18:46:39,860: INFO: train]: getting data for train
+[2021-10-27 18:46:39,865: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 18:46:39,865: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 18:46:39,865: INFO: train]: Creating directory
+[2021-10-27 18:46:39,865: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 18:46:39,875: INFO: train]: (2666, 15)
+[2021-10-27 18:46:39,875: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 18:46:39,875: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 18:46:39,875: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 18:46:39,875: INFO: train]: training started
+[2021-10-27 18:46:39,895: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 18:46:39,996: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 18:47:07,910: INFO: train]: Training is finished
+[2021-10-27 18:47:07,910: INFO: train]: training is complete
+[2021-10-27 18:48:42,109: INFO: train]: getting data for train
+[2021-10-27 18:48:42,109: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 18:48:42,109: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 18:48:42,109: INFO: train]: Creating directory
+[2021-10-27 18:48:42,109: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 18:48:42,125: INFO: train]: (2666, 15)
+[2021-10-27 18:48:42,125: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 18:48:42,125: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 18:48:42,125: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 18:48:42,125: INFO: train]: training started
+[2021-10-27 18:48:42,133: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 18:48:42,222: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 18:49:05,586: INFO: train]: Training is finished
+[2021-10-27 18:49:05,586: INFO: train]: training is complete
+[2021-10-27 18:52:15,108: INFO: train]: getting data for train
+[2021-10-27 18:52:15,116: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 18:52:15,116: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 18:52:15,116: INFO: train]: Creating directory
+[2021-10-27 18:52:15,116: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 18:52:15,124: INFO: train]: (2666, 15)
+[2021-10-27 18:52:15,124: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 18:52:15,124: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 18:52:15,124: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 18:52:15,124: INFO: train]: training started
+[2021-10-27 18:52:15,140: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 18:52:15,213: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 18:52:37,794: INFO: train]: Training is finished
+[2021-10-27 18:52:37,794: INFO: train]: training is complete

@@ -1,6 +1,6 @@
 # DVC - DL - TF - AIOPS demo
 
-download data --> [source](https://drive.google.com/drive/u/5/folders/1tz4IOoJKdi999IRdqJY04VOifyllRzj1
+download data --> [source](Churn Data freely avilable
 )
 
 ## commands - 
@@ -31,3 +31,10 @@ touch src/__init__.py src/utils/__init__.py param.yaml dvc.yaml config/config.ya
 ```bash
 pip install -e .
 ```
+### create config.yaml
+''' you shall put all configurations and metadata info here and read during execution
+
+### create params.yaml
+''' yiu shall put all params chganges here
+# create dvc.yaml 
+``` This file will create pipe lines based on stages created.
