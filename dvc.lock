@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  always_run:
+    cmd: python rough\rough.py
+  load_data:
+    cmd: python   src\Load_data.py
+    deps:
+    - path: config\config.yaml
+      md5: d855331ff3f713c8efa82dc85d872042
+      size: 354
+    - path: params.yaml
+      md5: d41d8cd98f00b204e9800998ecf8427e
+      size: 0
+    - path: src\Load_data.py
+      md5: 06c94f8e4b54fddec22e5e99cd26dbfd
+      size: 3203
+    outs:
+    - path: artifacts\Test\Test.csv
+      md5: e7c57c860c333c0807ce75911e6ce490
+      size: 156445
+    - path: artifacts\Train\Train.csv
+      md5: 2804d656f811d80fc8a3014bab0e6b4a
+      size: 662615

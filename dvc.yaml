@@ -1,0 +1,12 @@
+stages:
+  always_run:
+    cmd: python rough\rough.py
+  load_data:
+    cmd: python   src\Load_data.py
+    deps:
+      - config\config.yaml
+      - params.yaml
+      - src\Load_data.py
+    outs:
+      - artifacts\Train\Train.csv
+      - artifacts\Test\Test.csv

@@ -1,0 +1,14 @@
+artifacts:
+  ARTIFACTS_DIR: artifacts
+  DATA_DIR: data
+  DATA_FILE_NAME: churn.csv
+  TRAIN_DIR: Train
+  TEST_DIR: Test
+  VALID_DIR: Valid
+  TRAIN_FILE_NAME: Train.csv
+  TEST_FILE_NAME: Test.csv
+  VALID_FILE_NAME: Valid.csv
+  MODEL_DIR: Model
+  MODEL_FILE_NAME: churn_ann.h5
+  REPORTS_DIR: Reports
+  REPORT_FILE_NAME: classificationreport.txt

@@ -1,0 +1,109 @@
+[2021-10-27 14:33:20,303: INFO: train]: getting data for train
+[2021-10-27 14:33:20,305: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 14:33:20,305: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 14:33:20,315: INFO: train]: (2666, 15)
+[2021-10-27 14:33:20,317: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 14:33:20,332: INFO: train]:  shape of X_train is       VMail Message  Day Mins  Day Calls  Day Charge  Eve Mins  ...  Night Charge  Intl Mins  Intl Calls  Intl Charge  CustServ Calls
+0          0.490196  0.755701   0.666667    0.755701  0.502722  ...      0.595935      0.500    0.157895     0.500000        0.111111
+1          0.509804  0.460661   0.745455    0.460597  0.496975  ...      0.622236      0.685    0.157895     0.685185        0.111111
+2          0.000000  0.693843   0.690909    0.693830  0.272232  ...      0.375374      0.610    0.263158     0.609259        0.000000
+3          0.000000  0.853478   0.430303    0.853454  0.092861  ...      0.467424      0.330    0.368421     0.329630        0.222222
+4          0.000000  0.475200   0.684848    0.475184  0.354204  ...      0.440526      0.505    0.157895     0.505556        0.333333
+...             ...       ...        ...         ...       ...  ...           ...        ...         ...          ...             ...
+2661       0.000000  0.666762   0.581818    0.666667  0.567756  ...      0.429767      0.475    0.157895     0.475926        0.000000
+2662       0.000000  0.283922   0.654545    0.283870  0.839383  ...      0.371189      0.685    0.315789     0.685185        0.222222
+2663       0.000000  0.484036   0.745455    0.484071  0.459468  ...      1.000000      0.635    0.368421     0.635185        0.222222
+2664       0.509804  0.566705   0.696970    0.566734  0.409558  ...      0.471608      0.720    0.157895     0.720370        0.111111
+2665       0.000000  0.331243   0.521212    0.331154  0.600423  ...      0.487149      0.505    0.157895     0.505556        0.333333
+
+[2666 rows x 14 columns]
+[2021-10-27 14:33:20,335: INFO: train]:  shape of Y_train is 0       0.0
+1       0.0
+2       0.0
+3       0.0
+4       0.0
+       ... 
+2661    0.0
+2662    1.0
+2663    0.0
+2664    1.0
+2665    0.0
+Name: Churn?, Length: 2666, dtype: float64
+[2021-10-27 14:33:20,335: INFO: train]: training is complete
+[2021-10-27 14:34:05,529: INFO: train]: getting data for train
+[2021-10-27 14:34:05,530: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 14:34:05,531: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 14:34:05,541: INFO: train]: (2666, 15)
+[2021-10-27 14:34:05,543: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 14:34:05,543: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 14:34:05,543: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 14:34:05,543: INFO: train]: training is complete
+[2021-10-27 15:16:51,290: INFO: train]: getting data for train
+[2021-10-27 15:16:51,318: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 15:16:51,318: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 15:16:51,329: INFO: train]: (2666, 15)
+[2021-10-27 15:16:51,330: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 15:16:51,330: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 15:16:51,331: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 15:16:51,331: INFO: train]: training is complete
+[2021-10-27 15:18:11,061: INFO: train]: getting data for train
+[2021-10-27 15:18:11,062: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 15:18:11,063: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 15:18:11,072: INFO: train]: (2666, 15)
+[2021-10-27 15:18:11,074: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 15:18:11,074: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 15:18:11,074: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 15:18:11,074: INFO: train]: training is complete
+[2021-10-27 15:23:10,470: INFO: train]: getting data for train
+[2021-10-27 15:23:10,471: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 15:23:10,472: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 15:23:10,472: INFO: train]: Creating directory
+[2021-10-27 15:23:10,472: INFO: all_utils]: directory is created at artifacts\churn_ann.h5
+[2021-10-27 15:23:10,472: ERROR: train]: 'MODEL_FILE_NAME'
+Traceback (most recent call last):
+  File "src/train.py", line 55, in <module>
+    train("config/config.yaml","params.yaml")
+  File "src/train.py", line 27, in train
+    model_save_path=os.path.join(model_file_dir,artifacts["MODEL_FILE_NAME"])
+KeyError: 'MODEL_FILE_NAME'
+[2021-10-27 15:24:09,600: INFO: train]: getting data for train
+[2021-10-27 15:24:09,601: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 15:24:09,602: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 15:24:09,602: INFO: train]: Creating directory
+[2021-10-27 15:24:09,602: INFO: all_utils]: directory is created at artifacts\churn_ann.h5
+[2021-10-27 15:24:09,602: ERROR: train]: 'MODEL_FILE_NAME'
+Traceback (most recent call last):
+  File "src/train.py", line 55, in <module>
+    train("config/config.yaml","params.yaml")
+  File "src/train.py", line 27, in train
+    model_save_path=os.path.join(model_file_dir,artifacts["MODEL_FILE_NAME"])
+KeyError: 'MODEL_FILE_NAME'
+[2021-10-27 15:24:43,322: INFO: train]: getting data for train
+[2021-10-27 15:24:43,325: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 15:24:43,325: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 15:24:43,325: INFO: train]: Creating directory
+[2021-10-27 15:24:43,325: INFO: all_utils]: directory is created at artifacts\Model
+[2021-10-27 15:24:43,334: INFO: train]: (2666, 15)
+[2021-10-27 15:24:43,335: INFO: train]: train and test files have been read sucessfully
+[2021-10-27 15:24:43,335: INFO: train]:  shape of X_train is (2666, 14)
+[2021-10-27 15:24:43,335: INFO: train]:  shape of Y_train is (2666,)
+[2021-10-27 15:24:43,335: INFO: train]: training started
+[2021-10-27 15:24:43,404: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[2021-10-27 15:24:43,514: WARNING: deprecation]: From C:\Users\prema\anaconda3\envs\mnist_ann\lib\site-packages\tensorflow\python\ops\nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+[2021-10-27 15:24:44,404: INFO: train]: Training is finished
+[2021-10-27 15:24:44,405: INFO: train]: training is complete
+[2021-10-27 18:00:55,161: INFO: Load_data]: getting info from mnist dataset
+[2021-10-27 18:00:55,201: INFO: all_utils]: yaml file: config/config.yaml loaded successfully
+[2021-10-27 18:00:55,201: INFO: all_utils]: yaml file: params.yaml loaded successfully
+[2021-10-27 18:00:55,201: INFO: all_utils]: directory is created at artifacts\Train
+[2021-10-27 18:00:55,201: INFO: all_utils]: directory is created at artifacts\Test
+[2021-10-27 18:00:55,201: INFO: all_utils]: directory is created at artifacts\Valid
+[2021-10-27 18:00:55,252: INFO: Load_data]: getting the mnist data 1.14.0
+[2021-10-27 18:00:55,351: INFO: all_utils]: data is saved at artifacts\Train\Train.csv
+[2021-10-27 18:00:55,367: INFO: all_utils]: data is saved at artifacts\Test\Test.csv
+[2021-10-27 18:00:55,367: INFO: Load_data]: artifacts\Valid\Valid.csv
+[2021-10-27 18:00:55,367: INFO: Load_data]: data is sucessfully loaded
